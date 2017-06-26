@@ -1,11 +1,13 @@
-import {h, render, Component} from 'preact';
+import { h } from 'preact'
 
-const ProductSingle = () => {
-  return (
-    <div class="single-product">
-      <h2>Single</h2>
-    </div>
-  );
-};
+import styles from './styles.scss'
 
-export default ProductSingle;
+import SinglePlaceholder from './components/SinglePlaceholder/index'
+
+const ProductSingle = () => (
+  <div class="section-single-product">
+    <SinglePlaceholder />
+  </div>
+)
+
+export default ProductSingle

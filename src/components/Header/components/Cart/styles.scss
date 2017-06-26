@@ -1,0 +1,20 @@
+.cart-btn {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  img {
+    margin-right: 0.2em;
+    margin-top: 0.5em;
+    max-height: 2.3em;
+    max-width: 2.3em;
+  }
+  .cart-inventory-count {
+    margin-right: 0.6em;
+  }
+  .cart-split-line {
+    background: rgb(190, 190, 190);
+    height: 1.3em;
+    margin-right: 1em;
+    width: 1px;
+  }
+}

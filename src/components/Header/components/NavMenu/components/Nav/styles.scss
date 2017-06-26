@@ -1,0 +1,30 @@
+.nav-menu-container {
+  background: rgb(230, 230, 230);
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  .nav-menu-link {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 2em;
+  }
+}
+
+.nav-menu-transition-enter {
+  max-height: 0;
+  transition: max-height 300ms ease-in-out;
+}
+
+.nav-menu-transition-enter.nav-menu-transition-enter-active {
+  max-height: 11em;
+}
+
+.nav-menu-transition-leave {
+  max-height: 11em;
+}
+
+.nav-menu-transition-leave.nav-menu-transition-leave-active {
+  max-height: 0;
+  transition: max-height 300ms ease-in-out;
+}

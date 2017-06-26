@@ -5,6 +5,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: __dirname,
+    publicPath: '/',
     filename: 'app.bundle.js'
   },
   module: {
@@ -22,6 +23,9 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: 'babel-loader'
+      }, {
+        test: /\.(png|jpg)$/,
+        use: 'file-loader?name=images/[name].[ext]'
       }],
     noParse: [new RegExp('node_modules/localforage/dist/localforage.js')]
   },

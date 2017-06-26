@@ -1,47 +1,36 @@
-.nav-expand-container {
+.nav-btn-container {
+  align-items: center;
   display: flex;
-  height: 4.3rem;
+  height: 4.3em;
   transition: all 300ms ease-in-out;
-  width: 4.3rem;
+  strong {
+    margin-right: 1rem;
+  }
   .nav-expand-btn {
     display: flex;
     flex-direction: column;
-    height: 1.8rem;
+    height: 1.5rem;
     justify-content: space-around;
-    margin: auto;
-    transition: all 100ms ease-in-out;
-    width: 2rem;
+    margin-right: 1em;
+    transition: all 150ms ease-in-out;
+    width: 1.8rem;
     .nav-expand-bar {
       background: black;
       height: 1px;
       transition: all 300ms ease-in-out;
     }
-  }
-}
-
-.active {
-  color: white;
-  background: rgba(0, 0, 0, 0.7);
-  .nav-expand-btn {
-    .nav-expand-bar {
-      background: white;
+    &:hover {
+      cursor: pointer;
     }
-  }
-  .bar1 {
-    transform: translateY(0.6rem) rotate(45deg);
-  }
-  .bar2 {
-    opacity: 0;
-  }
-  .bar3 {
-    transform: translateY(-0.6rem) rotate(-45deg);
   }
 }
 
 @media screen and (min-width: 800px) {
-  .nav-expand-container:not(.active) {
-    .nav-expand-btn:hover {
-      height: 2.4rem;
+  .nav-menu {
+    .nav-btn-container {
+      .nav-expand-btn:hover {
+        height: 2rem;
+      }
     }
   }
 }

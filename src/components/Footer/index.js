@@ -1,12 +1,11 @@
-import {h, render, Component} from 'preact';
-import styles from './styles.scss';
+import { h } from 'preact'
 
-const Footer = () => {
-  return (
-    <div class="footer">
-      <p>Erik and Mikkel made this in 2017.</p>
-    </div>
-  );
-}
+import styles from './styles.scss'
 
-module.exports = Footer;
+const Footer = () => (
+  <div class="footer">
+    <p>Erik and Mikkel made this in 2017.</p>
+  </div>
+)
+
+export default Footer

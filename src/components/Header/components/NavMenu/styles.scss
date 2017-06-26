@@ -1,14 +1,16 @@
-.navmenu {
-  position: fixed;
-  right: 0;
-  ul {
-    background: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    right: 0;
+.nav-menu-active {
+ .nav-btn-container {
+    .bar1 {
+      transform: translateY(0.5rem) rotate(45deg);
+    }
+    .bar2 {
+      opacity: 0;
+    }
+    .bar3 {
+      transform: translateY(-0.5rem) rotate(-45deg);
+    }
   }
-  li {
-    color: white;
-    list-style: none;
-    padding: 1em;
+  .nav-menu-container {
+    height: 11em;
   }
 }
