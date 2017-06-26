@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-
-    <script>
-      (function(){
+    <script>(function(){
         var redirect = sessionStorage.redirect;
         delete sessionStorage.redirect;
         if (redirect && redirect != location.href) {
@@ -11,11 +9,9 @@
         }
       })();
     </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= htmlWebpackPlugin.options.title %></title>
-
   </head>
   <body>
   </body>
