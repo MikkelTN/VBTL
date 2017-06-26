@@ -1,5 +1,5 @@
 import {h, render, Component} from 'preact'
-import {BrowserRouter as Router, Route, browserHistory} from 'react-router-dom'
+import {BrowserRouter as Router, Route, browserHistory, Switch} from 'react-router-dom'
 import {Provider} from 'react-redux'
 import {createStore} from 'redux'
 
@@ -8,8 +8,9 @@ import store from './store'
 
 import Header from './components/Header/index'
 import Footer from './components/Footer/index'
-import Blog from './scenes/Blog/index'
+import Cart from './scenes/Cart/index'
 import Home from './scenes/Home/index'
+import NotFound from './scenes/NotFound/index'
 import Shop from './scenes/Shop/index'
 
 
@@ -18,11 +19,12 @@ const Main = () => (
     <Router history={browserHistory}>
       <div>
         <Header />
-
-        <Route exact path="/" component={Home} />
-        <Route path="/blog" component={Blog} />
-        <Route path="/shop" component={Shop} />
-
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/shop" component={Shop} />
+          <Route path="/cart" component={Cart} />
+          <Route component={NotFound} />
+        </Switch>
         <Footer />
       </div>
     </Router>

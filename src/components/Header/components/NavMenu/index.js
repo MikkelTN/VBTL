@@ -7,16 +7,18 @@ import Nav from './components/Nav/index'
 const NavMenu = ({
   visible,
   onExpandClick
-}) => (
-  <div class="navmenu">
+}) => {
+  const style = visible ? "nav-menu-active" : "nav-menu"
+  return (
+  <div class={style}>
     <ExpandButton
       onClick={() => onExpandClick()}
-      visible={visible}
     />
     <Nav
-      visible={visible}
+      visible = {visible}
     />
   </div>
-);
+  )
+}
 
 export default NavMenu

@@ -1,7 +1,7 @@
-import {h, Component} from 'preact';
+import { h } from 'preact'
 
 const NotFound = () => (
   <h1>404.. This page is not found!</h1>
-);
+)
 
-export default NotFound;
+export default NotFound

@@ -27,6 +27,17 @@ a:link, a:visited, a:hover, a:active {
   text-transform: uppercase;
 }
 
+.orange {
+  color: rgb(255, 179, 71);
+}
+
 .gray {
   color: rgb(100, 100, 100);
+}
+
+.hr-line {
+  background: rgb(190, 190, 190);
+  height: 1px;
+  margin: auto;
+  width: calc(100% - 3em);
 }
