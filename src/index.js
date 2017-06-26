@@ -1,7 +1,7 @@
-import {h, render, Component} from 'preact'
-import {BrowserRouter as Router, Route, browserHistory, Switch} from 'react-router-dom'
-import {Provider} from 'react-redux'
-import {createStore} from 'redux'
+import { h, render, Component } from 'preact'
+import { HashRouter as Router, Route, browserHistory, Switch } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
 
 import styles from './styles.scss'
 import store from './store'
@@ -16,7 +16,7 @@ import Shop from './scenes/Shop/index'
 
 const Main = () => (
   <Provider store={store}>
-    <Router history={browserHistory}>
+    <Router /**history={browserHistory**/>
       <div>
         <Header />
         <Switch>
