@@ -2,8 +2,6 @@ import { h } from 'preact'
 
 import styles from './styles.scss'
 
-const path = "/src/data/images/"
-
 const CartProduct = ({
   onRemoveClick,
   onIncreaseClick,
@@ -14,7 +12,7 @@ const CartProduct = ({
 }) => (
   <div class="cart-product">
       <img
-        src={`${path}${product.img_grid}`}
+        src={require(`../../images/${product.img_grid}`)}
         alt={product.caption}
         class="grid-product-img"
       />

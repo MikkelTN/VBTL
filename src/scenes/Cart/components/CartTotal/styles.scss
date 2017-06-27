@@ -1,8 +1,9 @@
 .cart-total-list {
   display: flex;
   flex-direction: column;
-  height: 6em;
+  height: 7em;
   justify-content: space-between;
+  margin-bottom: 3em;
   max-width: 365px;
   width: 80vw;
   .cart-sub-total {
