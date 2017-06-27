@@ -1,7 +1,21 @@
-import {h, render, Component} from 'preact'
-import {HashRouter as Router, Route, Switch} from 'react-router-dom'
-import {Provider} from 'react-redux'
-import {createStore} from 'redux'
+import {
+  h,
+  render
+} from 'preact'
+import {
+  Route,
+  Switch
+} from 'react-router-dom'
+import {
+  Provider
+} from 'react-redux'
+import {
+  createStore
+} from 'redux'
+import {
+  ConnectedRouter
+} from 'react-router-redux'
+import createHistory from 'history/createHashHistory'
 
 import styles from './styles.scss'
 import store from './store'
@@ -11,23 +25,24 @@ import Footer from './components/Footer/index'
 import Cart from './scenes/Cart/index'
 import Home from './scenes/Home/index'
 import NotFound from './scenes/NotFound/index'
-import Shop from './scenes/Shop/index'
+import ConnectedShop from './containers/ConnectedShop/index'
 
+const history = createHistory()
 
 const Main = () => (
   <Provider store={store}>
-    <Router>
-      <div>
+    <ConnectedRouter history={history}>
+      <div class="main">
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/shop" component={Shop} />
+          <Route path="/shop" component={ConnectedShop} />
           <Route path="/cart" component={Cart} />
           <Route component={NotFound} />
         </Switch>
         <Footer />
       </div>
-    </Router>
+    </ConnectedRouter>
   </Provider>
 )
 

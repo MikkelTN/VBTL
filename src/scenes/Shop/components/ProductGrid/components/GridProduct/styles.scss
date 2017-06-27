@@ -1,0 +1,32 @@
+.grid-product {
+  align-items: center;
+  background: rgb(240, 240, 240);
+  box-shadow: 1px 1px 1px #888;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2em;
+  max-width: 365px;
+  width: 80vw;
+  .grid-product-link {
+    img {
+      max-width: 365px;
+      width: 80vw;
+    }
+  }
+  .grid-product-price {
+    margin: 0.5em;
+  }
+  .grid-product-btns {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    width: 90%;
+    button {
+      border: 1px solid rgb(200, 200, 200);
+      border-radius: 3px;
+      padding: 0.3em;
+      width: 8.3em;
+    }
+  }
+}

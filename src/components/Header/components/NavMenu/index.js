@@ -6,7 +6,8 @@ import Nav from './components/Nav/index'
 
 const NavMenu = ({
   visible,
-  onExpandClick
+  onExpandClick,
+  onCloseClick
 }) => {
   const style = visible ? "nav-menu-active" : "nav-menu"
   return (
@@ -16,6 +17,7 @@ const NavMenu = ({
     />
     <Nav
       visible = {visible}
+      onClick={() => onCloseClick()}
     />
   </div>
   )

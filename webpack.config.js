@@ -36,7 +36,7 @@ module.exports = {
     }
   },
   devServer: {
-    contentBase: __dirname + './dist',
+    contentBase: __dirname,
     compress: true,
     historyApiFallback: true,
     port: 9000,
