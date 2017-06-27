@@ -2,19 +2,26 @@ import { h } from 'preact'
 
 import styles from './styles.scss'
 
-import Footer from '../../../../components/Footer/index'
 import GridHeader from './components/GridHeader/index'
-import Placeholder from '../Placeholder/index'
+import GridProduct from './components/GridProduct/index'
 
-
-const ProductGrid = () => (
+const ProductGrid = ({
+  products,
+  addToCart,
+  incrementLikes
+}) => (
   <div class="section-product-grid">
     <GridHeader />
     <div class="product-grid">
-      <Placeholder />
-      <Placeholder />
-      <Placeholder />
-      <Placeholder />
+      {products.map((product, i) =>
+        <GridProduct
+          {...products}
+          key={i}
+          i={i}
+          product={product}
+          onCartClick={() => addToCart(product.id)}
+          onLikeClick={() => incrementLikes(product.id)}
+        />)}
     </div>
   </div>
 )

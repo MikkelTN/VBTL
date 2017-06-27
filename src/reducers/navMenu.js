@@ -1,12 +1,9 @@
-const navMenu = (state = {
-  visible: false
-}, action) => {
+const navMenu = (state = false, action) => {
   switch (action.type) {
     case 'TOGGLE_NAV':
-      return {
-        ...state,
-        visible: !state.visible
-      }
+      return !state
+    case 'CLOSE_NAV':
+      return false
     default:
       return state
   }

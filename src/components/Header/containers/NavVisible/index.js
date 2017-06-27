@@ -1,12 +1,17 @@
 import { connect } from 'react-redux'
-import { toggleNav } from '../../actions/index'
+import {
+  toggleNav,
+  closeNav
+} from '../../actions/index'
 
 import NavMenu from '../../components/NavMenu/index'
 
 const mapStateToProps = (
   state
 ) => (
-  {visible: state.navMenu.visible}
+  {
+    visible: state.navMenu
+  }
 )
 
 const mapDispatchToProps = (
@@ -15,6 +20,9 @@ const mapDispatchToProps = (
   {
     onExpandClick: () => {
       dispatch(toggleNav())
+    },
+    onCloseClick: () => {
+      dispatch(closeNav())
     }
   }
 )

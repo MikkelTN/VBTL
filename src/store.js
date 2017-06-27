@@ -1,4 +1,13 @@
-import {createStore, applyMiddleware} from 'redux';
+import {
+  compose,
+  createStore,
+  applyMiddleware
+} from 'redux'
+import {
+  routerMiddleware
+} from 'react-router-redux'
+
+import productdata from './data/productdata'
 
 import rootReducer from './reducers/index';
 
@@ -10,6 +19,18 @@ const actionLogger = ({dispatch, getState}) =>
 
 const middleware = applyMiddleware(actionLogger);
 
-const store = createStore(rootReducer, middleware);
+const defaultState = {
+  navMenu: false,
+  products: productdata
+}
+
+const store = createStore(
+  rootReducer,
+  defaultState,
+  compose(
+    applyMiddleware(routerMiddleware(history)),
+    window.devToolsExtension ? window.devToolsExtension() : f => f,
+  )
+)
 
 export default store;

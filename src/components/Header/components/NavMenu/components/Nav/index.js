@@ -6,10 +6,12 @@ import styles from './styles.scss'
 
 const NavMenuLink = ({
   scene,
-  children
+  children,
+  onClick
 }) => (
   <div class="nav-menu-link">
     <Link
+      onClick={onClick}
       to={scene === '/home' ? '/' : scene}
     >
       <strong class="uppercase">
@@ -23,22 +25,32 @@ const NavMenuLink = ({
 )
 
 const Nav = ({
-  visible
+  visible,
+  onClick
 }) => {
   let menu;
   menu = visible ? (
     <div class="nav-menu-container" key={"nav-menu"}>
-      <NavMenuLink scene="/home">
+      <NavMenuLink
+        scene="/home"
+        onClick={onClick}
+      >
         Home
       </NavMenuLink>
       <div class="hr-line">
       </div>
-      <NavMenuLink scene="/shop">
+      <NavMenuLink
+        scene="/shop"
+        onClick={onClick}
+      >
         Shop
       </NavMenuLink>
       <div class="hr-line">
       </div>
-      <NavMenuLink scene="/contact">
+      <NavMenuLink
+        scene="/contact"
+        onClick={onClick}
+      >
         Contact
       </NavMenuLink>
     </div>

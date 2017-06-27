@@ -23,6 +23,17 @@ a:link, a:visited, a:hover, a:active {
 	text-decoration: none;
 }
 
+button {
+	background: transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+  font-family: $font-stack;
+  font-size: calc(1rem + 0.3vw);
+	outline: none;
+	overflow: hidden;
+}
+
 .uppercase {
   text-transform: uppercase;
 }

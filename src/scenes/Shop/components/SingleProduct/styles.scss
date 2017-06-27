@@ -1,0 +1,17 @@
+.single-product {
+  margin-top: 4.3em;
+  display: flex;
+  flex-direction: column;
+  .single-product-img {
+    width: 100%;
+    max-width: 720px;
+  }
+  .single-product-carousel {
+    display: flex;
+    margin-top: 0.5em;
+    .single-product-carousel-img {
+      max-height: 15vh;
+      margin-right: 0.2em;
+    }
+  }
+}
