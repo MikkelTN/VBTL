@@ -3,6 +3,7 @@ import {
   render
 } from 'preact'
 import {
+  HashRouter as Router,
   Route,
   Switch
 } from 'react-router-dom'
@@ -12,10 +13,6 @@ import {
 import {
   createStore
 } from 'redux'
-import {
-  ConnectedRouter
-} from 'react-router-redux'
-import createHistory from 'history/createHashHistory'
 
 import styles from './styles.scss'
 import store from './store'
@@ -27,11 +24,9 @@ import Home from './scenes/Home/index'
 import NotFound from './scenes/NotFound/index'
 import ConnectedShop from './containers/ConnectedShop/index'
 
-const history = createHistory()
-
 const Main = () => (
   <Provider store={store}>
-    <ConnectedRouter history={history}>
+    <Router>
       <div class="main">
         <Header />
         <Switch>
@@ -42,7 +37,7 @@ const Main = () => (
         </Switch>
         <Footer />
       </div>
-    </ConnectedRouter>
+    </Router>
   </Provider>
 )
 
