@@ -1,17 +1,47 @@
 .single-product {
-  margin-top: 4.3em;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  padding-top: 4.3em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
   .single-product-img {
     width: 100%;
     max-width: 720px;
   }
   .single-product-carousel {
+    align-self: flex-start;
     display: flex;
     margin-top: 0.5em;
     .single-product-carousel-img {
+      cursor: pointer;
       max-height: 15vh;
       margin-right: 0.2em;
+    }
+  }
+  .hr-line {
+    margin: 0.7em;
+  }
+  .single-product-description {
+    width: 90%;
+    h2 {
+      margin-bottom: 0.7em;
+    }
+    .single-product-text {
+      margin-bottom: 2em;
+    }
+  }
+  .single-product-btns {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3em;
+    width: 90%;
+    button {
+      border: 1px solid rgb(200, 200, 200);
+      border-radius: 3px;
+      padding: 0.3em;
+      width: 8.3em;
     }
   }
 }

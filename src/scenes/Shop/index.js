@@ -8,7 +8,7 @@ import SingleProduct from './components/SingleProduct/index'
 
 const Shop = ({
   products,
-  addToCart,
+  increaseQuantity,
   changeCarousel,
   incrementLikes,
   match
@@ -21,7 +21,7 @@ const Shop = ({
           <ProductGrid
             {...props}
             products={products}
-            addToCart={addToCart}
+            increaseQuantity={increaseQuantity}
             incrementLikes={incrementLikes}
           />
         )}
@@ -32,7 +32,7 @@ const Shop = ({
           <SingleProduct
           {...props}
           products={products}
-          addToCart={addToCart}
+          increaseQuantity={increaseQuantity}
           changeCarousel={changeCarousel}
           incrementLikes={incrementLikes}
           />

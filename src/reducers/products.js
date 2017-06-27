@@ -1,9 +1,6 @@
 const products = (state = [], action) => {
   const id = action.productId
   switch (action.type) {
-    case 'ADD_TO_CART':
-      console.log('Added to cart!')
-      return state
     case 'CHANGE_CAROUSEL':
       return [
         ...state.slice(0, id),

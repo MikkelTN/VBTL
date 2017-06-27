@@ -1,0 +1,18 @@
+.cart-total-list {
+  display: flex;
+  flex-direction: column;
+  height: 6em;
+  justify-content: space-between;
+  max-width: 365px;
+  width: 80vw;
+  .cart-sub-total {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .cart-check-out {
+    background: rgb(255, 179, 71);
+    border-radius: 3px;
+    padding: 0.5em;
+  }
+}

@@ -1,5 +1,5 @@
 import { h } from 'preact'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { CSSTransitionGroup } from 'react-transition-group'
 
 import styles from './styles.scss'
@@ -10,17 +10,17 @@ const NavMenuLink = ({
   onClick
 }) => (
   <div class="nav-menu-link">
-    <Link
+    <NavLink
       onClick={onClick}
-      to={scene === '/home' ? '/' : scene}
+      exact to={scene}
+      activeStyle={{
+        fontWeight: "bold"
+      }}
     >
-      <strong class="uppercase">
+      <p class="uppercase">
         {children}
-      </strong>
-    </Link>
-    <h2>
-      +
-    </h2>
+      </p>
+    </NavLink>
   </div>
 )
 
@@ -32,7 +32,7 @@ const Nav = ({
   menu = visible ? (
     <div class="nav-menu-container" key={"nav-menu"}>
       <NavMenuLink
-        scene="/home"
+        scene="/"
         onClick={onClick}
       >
         Home

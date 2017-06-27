@@ -6,18 +6,18 @@ import Nav from './components/Nav/index'
 
 const NavMenu = ({
   visible,
-  onExpandClick,
-  onCloseClick
+  toggleNav,
+  closeNav
 }) => {
   const style = visible ? "nav-menu-active" : "nav-menu"
   return (
   <div class={style}>
     <ExpandButton
-      onClick={() => onExpandClick()}
+      onClick={() => toggleNav()}
     />
     <Nav
       visible = {visible}
-      onClick={() => onCloseClick()}
+      onClick={() => closeNav()}
     />
   </div>
   )

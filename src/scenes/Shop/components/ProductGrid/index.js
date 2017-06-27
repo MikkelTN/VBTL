@@ -7,7 +7,7 @@ import GridProduct from './components/GridProduct/index'
 
 const ProductGrid = ({
   products,
-  addToCart,
+  increaseQuantity,
   incrementLikes
 }) => (
   <div class="section-product-grid">
@@ -19,7 +19,7 @@ const ProductGrid = ({
           key={i}
           i={i}
           product={product}
-          onCartClick={() => addToCart(product.id)}
+          onCartClick={() => increaseQuantity(product.id)}
           onLikeClick={() => incrementLikes(product.id)}
         />)}
     </div>

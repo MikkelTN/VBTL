@@ -30,7 +30,7 @@ const GridProduct = ({
     <strong
       class="grid-product-price orange"
     >
-      {product.price}
+      ${product.price}
     </strong>
     <div
       class="grid-product-btns"
