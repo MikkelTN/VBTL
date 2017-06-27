@@ -2,13 +2,13 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as actionCreators from '../../../../actions/index'
 
-import NavMenu from '../../components/NavMenu/index'
+import MiniCart from '../../components/MiniCart/index'
 
 const mapStateToProps = (
   state
 ) => (
   {
-    visible: state.navMenu
+    cart: state.cart
   }
 )
 
@@ -21,9 +21,9 @@ const mapDispatchToProps = (
   )
 )
 
-const NavVisible = connect(
+const ConnectedMiniCart = connect(
   mapStateToProps,
   mapDispatchToProps
-)(NavMenu)
+)(MiniCart)
 
-export default NavVisible
+export default ConnectedMiniCart

@@ -1,12 +1,11 @@
 import { h } from 'preact'
-import { Link } from 'react-router-dom'
 
 import styles from './styles.scss'
 
 const path = "/src/data/images/"
 
 const SingleProduct = ({
-  addToCart,
+  increaseQuantity,
   changeCarousel,
   incrementLikes,
   products,
@@ -23,9 +22,6 @@ const SingleProduct = ({
         alt={product.caption}
         class="single-product-img"
       />
-      <strong
-        class="single-product-caption uppercase"
-      >
       <div
         class="single-product-carousel"
       >
@@ -38,19 +34,35 @@ const SingleProduct = ({
           />
       )}
       </div>
-        {product.caption}
-      </strong>
-      <strong
-        class="single-product-price orange"
+      <div
+        class="hr-line"
       >
-        {product.price}
-      </strong>
+      </div>
+      <div
+        class="single-product-description"
+      >
+        <h2
+          class="single-product-caption uppercase"
+        >
+          {product.caption}
+        </h2>
+        <h2
+          class="single-product-price orange"
+        >
+          ${product.price}
+        </h2>
+        <p
+          class="single-product-text"
+        >
+          {product.text}
+        </p>
+      </div>
       <div
         class="single-product-btns"
       >
         <button
           class="single-product-add-cart orange uppercase"
-          onClick={() => addToCart(product.id)}
+          onClick={() => increaseQuantity(product.id)}
         >
           <strong>
             Add to cart

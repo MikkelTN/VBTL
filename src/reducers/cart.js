@@ -1,20 +1,28 @@
-const cart = (state = [], action) => {
+const cart = (state = {}, action) => {
+  const id = action.productId
   switch (action.type) {
-    case 'ADD_TO_CART':
-      console.log('Added to cart!')
-      return state
-    case 'CHANGE_CAROUSEL':
-      return state
-    case 'INCREMENT_LIKES':
-      const id = action.productId
-      return [
-        ...state.slice(0, id),
-        {
-          ...state[id],
-          likes: state[id].likes + 1
-        },
-        ...state.slice(id + 1)
-      ]
+    case 'INCREASE_QUANTITY':
+      return {
+        ...state,
+        [id]: state[id] + 1 || 1,
+        total: state.total + 1
+      }
+    case 'DECREASE_QUANTITY':
+      if (state[id] > 1) {
+        return {
+          ...state,
+          [id]: state[id] - 1 ,
+          total: state.total - 1
+        }
+      } else {
+        return state
+      }
+    case 'REMOVE_FROM_CART':
+      return {
+        ...state,
+        total: state.total - state[id],
+        [id]: 0
+      }
     default:
       return state
   }

@@ -22,7 +22,7 @@ import store from './store'
 
 import Header from './components/Header/index'
 import Footer from './components/Footer/index'
-import Cart from './scenes/Cart/index'
+import ConnectedCart from './containers/ConnectedCart/index'
 import Home from './scenes/Home/index'
 import NotFound from './scenes/NotFound/index'
 import ConnectedShop from './containers/ConnectedShop/index'
@@ -37,7 +37,7 @@ const Main = () => (
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/shop" component={ConnectedShop} />
-          <Route path="/cart" component={Cart} />
+          <Route path="/cart" component={ConnectedCart} />
           <Route component={NotFound} />
         </Switch>
         <Footer />

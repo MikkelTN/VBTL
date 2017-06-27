@@ -21,7 +21,10 @@ const middleware = applyMiddleware(actionLogger);
 
 const defaultState = {
   navMenu: false,
-  products: productdata
+  products: productdata,
+  cart: {
+    total: 0
+  }
 }
 
 const store = createStore(
