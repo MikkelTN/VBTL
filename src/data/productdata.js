@@ -7,15 +7,15 @@ const productdata = [
     "price": 199.99,
     "text": "This stuff is the greatest, and you really need it. It is definitely worth every penny!",
     "likes": 0,
-    "img_grid": "Stuff/Stuff1_grid.jpg",
+    "img_grid": "Stuff/Stuff1grid.jpg",
     "active_single": 0,
     "img_single": [
-      "Stuff/Stuff1_single.jpg",
-      "Stuff/Stuff2_single.jpg"
+      "Stuff/Stuff1single.jpg",
+      "Stuff/Stuff2single.jpg"
     ],
     "img_carousel": [
-      "Stuff/Stuff1_carousel.jpg",
-      "Stuff/Stuff2_carousel.jpg"
+      "Stuff/Stuff1carousel.jpg",
+      "Stuff/Stuff2carousel.jpg"
     ]
   }, {
     "product": "Green Cake",
@@ -25,15 +25,15 @@ const productdata = [
     "price": 150,
     "text": "This cake is the best cake. You will never find another like it, and you really need to buy it. The cutlery and plant are not included.",
     "likes": 0,
-    "img_grid": "GreenCake/GreenCake1_grid.jpg",
+    "img_grid": "GreenCake/GreenCake1grid.jpg",
     "active_single": 0,
     "img_single": [
-      "GreenCake/GreenCake1_single.jpg",
-      "GreenCake/GreenCake2_single.jpg"
+      "GreenCake/GreenCake1single.jpg",
+      "GreenCake/GreenCake2single.jpg"
     ],
     "img_carousel": [
-      "GreenCake/GreenCake1_carousel.jpg",
-      "GreenCake/GreenCake2_carousel.jpg"
+      "GreenCake/GreenCake1carousel.jpg",
+      "GreenCake/GreenCake2carousel.jpg"
     ]
   }, {
     "product": "Boots",
@@ -43,17 +43,17 @@ const productdata = [
     "price": 10.49,
     "text": "These boots are brown and great for walking long walks along the beach.",
     "likes": 0,
-    "img_grid": "Boots/Boots1_grid.jpg",
+    "img_grid": "Boots/Boots1grid.jpg",
     "active_single": 0,
     "img_single": [
-      "Boots/Boots1_single.jpg",
-      "Boots/Boots2_single.jpg",
-      "Boots/Boots3_single.jpg"
+      "Boots/Boots1single.jpg",
+      "Boots/Boots2single.jpg",
+      "Boots/Boots3single.jpg"
     ],
     "img_carousel": [
-      "Boots/Boots1_carousel.jpg",
-      "Boots/Boots2_carousel.jpg",
-      "Boots/Boots3_carousel.jpg"
+      "Boots/Boots1carousel.jpg",
+      "Boots/Boots2carousel.jpg",
+      "Boots/Boots3carousel.jpg"
     ]
   }, {
     "product": "Teddybears",
@@ -63,17 +63,17 @@ const productdata = [
     "price": 25.75,
     "text": "You will not find teddybears cuter than these. Introduce them to your loving home, and build them a castle of love and great stuff.",
     "likes": 0,
-    "img_grid": "Teddybears/Teddybears1_grid.jpg",
+    "img_grid": "Teddybears/Teddybears1grid.jpg",
     "active_single": 0,
     "img_single": [
-      "Teddybears/Teddybears1_single.jpg",
-      "Teddybears/Teddybears2_single.jpg",
-      "Teddybears/Teddybears3_single.jpg"
+      "Teddybears/Teddybears1single.jpg",
+      "Teddybears/Teddybears2single.jpg",
+      "Teddybears/Teddybears3single.jpg"
     ],
     "img_carousel": [
-      "Teddybears/Teddybears1_carousel.jpg",
-      "Teddybears/Teddybears2_carousel.jpg",
-      "Teddybears/Teddybears3_carousel.jpg"
+      "Teddybears/Teddybears1carousel.jpg",
+      "Teddybears/Teddybears2carousel.jpg",
+      "Teddybears/Teddybears3carousel.jpg"
     ]
   }
 ]
