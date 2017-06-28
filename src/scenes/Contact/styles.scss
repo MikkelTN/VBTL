@@ -6,8 +6,8 @@
   .contact-content {
     align-items: center;
     display: flex;
+    min-height: calc(90vh - 6em);
     flex-direction: column;
-    height: 80vh;
     justify-content: center;
   }
 }

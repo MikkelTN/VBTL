@@ -12,18 +12,22 @@ const Home = ({
     >
       Welcome to VBTL
     </h1>
-    <button
-      class="home-to-shop-btn uppercase"
-      onClick={() => closeNav()}
+    <div
+      class="home-content"
     >
-      <Link
-        to="/shop"
+      <button
+        class="home-to-shop-btn uppercase"
+        onClick={() => closeNav()}
       >
-        <h4>
-          Enter the store
-        </h4>
-      </Link>
-    </button>
+        <Link
+          to="/shop"
+        >
+          <h4>
+            Enter the store
+          </h4>
+        </Link>
+      </button>
+    </div>
   </div>
 )
 

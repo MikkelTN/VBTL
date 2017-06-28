@@ -1,18 +1,22 @@
 .section-home {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  min-height: 95vh;
-  justify-content: center;
-  button {
-    border: 3px solid rgb(255, 179, 71);
-    border-radius: 2em;
-    margin-top: 3em;
-    padding: 0.6em 1.4em;
-    transition: all 400ms ease-in-out;
-    &:hover {
-      background: rgb(255, 179, 71);
-      padding: 0.6em 2em;
+  padding-top: 6em;
+  text-align: center;
+  .home-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(90vh - 6em);
+    justify-content: center;
+    button {
+      border: 3px solid rgb(255, 179, 71);
+      border-radius: 2em;
+      margin-top: 3em;
+      padding: 0.6em 1.4em;
+      transition: all 400ms ease-in-out;
+      &:hover {
+        background: rgb(255, 179, 71);
+        padding: 0.6em 2em;
+      }
     }
   }
 }

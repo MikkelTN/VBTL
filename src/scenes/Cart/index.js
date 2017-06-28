@@ -39,22 +39,26 @@ const Cart = ({
       >
         Shopping cart
       </h1>
-      {products.map((product, i) => {
-        if (cart[product.id] > 0) {
-          return (
-            <CartProduct
-              cart={cart}
-              key={i}
-              i={i}
-              product={product}
-              onRemoveClick={() => removeFromCart(product.id)}
-              onIncreaseClick={() => increaseQuantity(product.id)}
-              onDecreaseClick={() => decreaseQuantity(product.id)}
-            />
-          )
-        }
-      })}
-      {cartDisplay}
+      <div
+        class="cart-content"
+      >
+        {products.map((product, i) => {
+          if (cart[product.id] > 0) {
+            return (
+              <CartProduct
+                cart={cart}
+                key={i}
+                i={i}
+                product={product}
+                onRemoveClick={() => removeFromCart(product.id)}
+                onIncreaseClick={() => increaseQuantity(product.id)}
+                onDecreaseClick={() => decreaseQuantity(product.id)}
+              />
+            )
+          }
+        })}
+        {cartDisplay}
+      </div>
     </div>
   )
 }

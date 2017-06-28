@@ -12,14 +12,6 @@ export const closeNav = () => (
   }
 )
 
-//Add to cart or increase quantity
-export const increaseQuantity = (productId) => (
-  {
-    type: "INCREASE_QUANTITY",
-    productId
-  }
-)
-
 //Remove from cart
 export const removeFromCart = (productId) => (
   {
@@ -28,6 +20,13 @@ export const removeFromCart = (productId) => (
   }
 )
 
+//Increase quantity
+export const increaseQuantity = (productId) => (
+  {
+    type: "INCREASE_QUANTITY",
+    productId
+  }
+)
 
 //Decrease quantity
 export const decreaseQuantity = (productId) => (

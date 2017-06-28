@@ -24,11 +24,12 @@ import ConnectedCart from './containers/ConnectedCart/index'
 import ConnectedHome from './containers/ConnectedHome/index'
 import ConnectedShop from './containers/ConnectedShop/index'
 import NotFound from './scenes/NotFound/index'
+import ScrollToTop from './components/ScrollToTop/index'
 
 const Main = () => (
   <Provider store={store}>
     <Router>
-      <div class="main">
+      <ScrollToTop>
         <Header />
         <Switch>
           <Route exact path="/" component={ConnectedHome} />
@@ -38,7 +39,7 @@ const Main = () => (
           <Route component={NotFound} />
         </Switch>
         <Footer />
-      </div>
+      </ScrollToTop>
     </Router>
   </Provider>
 )
