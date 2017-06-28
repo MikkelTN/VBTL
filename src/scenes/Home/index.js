@@ -1,14 +1,29 @@
-import {h, render, Component} from 'preact'
+import { h } from 'preact'
+import { Link } from 'react-router-dom'
 
 import styles from './styles.scss'
 
-import Footer from '../../components/Footer/index'
-
-const Home = () => (
+const Home = ({
+  closeNav
+}) => (
   <div class="section-home">
-    <p>
-      This is the homepage, and it is very pretty.
-    </p>
+    <h1
+      class="home-caption"
+    >
+      Welcome to VBTL
+    </h1>
+    <button
+      class="home-to-shop-btn uppercase"
+      onClick={() => closeNav()}
+    >
+      <Link
+        to="/shop"
+      >
+        <h4>
+          Enter the store
+        </h4>
+      </Link>
+    </button>
   </div>
 )
 

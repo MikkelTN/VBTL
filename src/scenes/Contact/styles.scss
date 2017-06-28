@@ -1,0 +1,13 @@
+.section-contact {
+  padding-top: 6em;
+  .contact-caption {
+    text-align: center;
+  }
+  .contact-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+  }
+}
