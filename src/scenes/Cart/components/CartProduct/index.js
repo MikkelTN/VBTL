@@ -65,7 +65,7 @@ const CartProduct = ({
         class="grid-product-price description"
       >
         <p>Total</p>
-        <strong>${product.price * cart[product.id]}</strong>
+        <strong>${(product.price * cart[product.id]).toFixed(2)}</strong>
       </div>
     </div>
     <button

@@ -21,6 +21,7 @@ const CartTotal = ({
           .reduce((total, price) => (
             total + price
           ), 0)
+          .toFixed(2)
         }
       </h2>
     </div>

@@ -1,9 +1,12 @@
 .nav-menu-container {
   background: rgb(255, 179, 71);
-  left: 0;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px;
+  right: 3em;
   overflow: hidden;
   position: absolute;
-  width: 100%;
+  top: 3em;
+  width: 10em;
   .nav-menu-link {
     display: flex;
     justify-content: space-between;
