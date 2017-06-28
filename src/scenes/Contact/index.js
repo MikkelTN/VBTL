@@ -3,9 +3,7 @@ import { h } from 'preact'
 import styles from './styles.scss'
 
 const Contact = () => (
-  <div
-    class="section-contact"
-  >
+  <div class="section-contact">
     <h1
       class="contact-caption"
     >

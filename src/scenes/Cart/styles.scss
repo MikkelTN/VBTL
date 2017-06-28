@@ -1,10 +1,11 @@
 .section-cart {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   padding-top: 6em;
-  min-height: 100vh;
-  .cart-empty {
-    margin-top: 10em;
+  .cart-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(90vh - 6em);
+    justify-content: space-around;
   }
 }
