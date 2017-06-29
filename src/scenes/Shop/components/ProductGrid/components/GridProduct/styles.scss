@@ -6,11 +6,14 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 2em;
-  max-width: 365px;
+  max-width: 400px;
   width: 80vw;
   .grid-product-link {
-    img {
-      max-width: 365px;
+    margin-bottom: 1em;
+    .image {
+      height: 60vw;
+      max-height: 300px;
+      max-width: 400px;
       width: 80vw;
     }
   }

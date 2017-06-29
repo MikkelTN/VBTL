@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 
 import styles from './styles.scss'
 
+import Image from '../../../../../../components/Image/index'
+
 const GridProduct = ({
   onCartClick,
   onLikeClick,
@@ -14,10 +16,9 @@ const GridProduct = ({
       to={`shop/${product.code}`}
       class="grid-product-link"
     >
-      <img
+      <Image
         src={require(`../../../../images/${product.img_grid}`)}
         alt={product.caption}
-        class="grid-product-img"
       />
     </Link>
     <strong

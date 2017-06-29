@@ -2,6 +2,8 @@ import { h } from 'preact'
 
 import styles from './styles.scss'
 
+import Image from '../../../../components/Image/index'
+
 const CartProduct = ({
   onRemoveClick,
   onIncreaseClick,
@@ -11,7 +13,7 @@ const CartProduct = ({
   i
 }) => (
   <div class="cart-product">
-      <img
+      <Image
         src={require(`../../images/${product.img_grid}`)}
         alt={product.caption}
         class="grid-product-img"
