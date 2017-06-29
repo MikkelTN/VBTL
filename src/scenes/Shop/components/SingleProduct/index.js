@@ -2,6 +2,8 @@ import { h } from 'preact'
 
 import styles from './styles.scss'
 
+import Image from '../../../../components/Image/index'
+
 const SingleProduct = ({
   increaseQuantity,
   changeCarousel,
@@ -15,19 +17,17 @@ const SingleProduct = ({
   const product = products[id]
   return (
     <div class="single-product">
-      <img
+      <Image
         src={require(`../../images/${product.img_single[product.active_single]}`)}
         alt={product.caption}
-        class="single-product-img"
       />
       <div
         class="single-product-carousel"
       >
       {product.img_carousel.map((img, i) =>
-        <img
+        <Image
           src={require(`../../images/${product.img_carousel[i]}`)}
           alt={product.caption}
-          class="single-product-carousel-img"
           onClick={() => changeCarousel(product.id, i)}
           />
       )}

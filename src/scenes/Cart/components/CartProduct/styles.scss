@@ -6,9 +6,11 @@
   margin: 2em;
   max-width: 365px;
   width: 80vw;
-  img {
-      max-width: 365px;
-      width: 80vw;
+  .image {
+    height: 60vw;
+    max-height: 300px;
+    max-width: 400px;
+    width: 80vw;
   }
   .grid-product-list {
     display: flex;

@@ -20,7 +20,8 @@ const defaultState = {
   navMenu: false,
   products: productdata,
   cart: {
-    total: 0
+    0: 1,
+    total: 1
   }
 }
 

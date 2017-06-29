@@ -6,18 +6,22 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 720px;
-  .single-product-img {
-    width: 100%;
-    max-width: 720px;
+  width: 100vw;
+  .image {
+    height: 75vw;
+    max-height: 540px;
   }
   .single-product-carousel {
     align-self: flex-start;
     display: flex;
     margin-top: 0.5em;
-    .single-product-carousel-img {
+    .image {
       cursor: pointer;
-      max-height: 15vh;
+      height: 15vh;
+      max-height: 150px;
+      max-width: 112px;
       margin-right: 0.2em;
+      width: calc(15vh * 3 / 4);
     }
   }
   .hr-line {
