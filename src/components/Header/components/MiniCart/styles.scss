@@ -1,7 +1,6 @@
 .cart-btn {
   align-items: center;
   display: flex;
-  margin-left: auto;
   img {
     margin-right: 0.2em;
     margin-top: 0.5em;
@@ -10,11 +9,5 @@
   }
   .cart-inventory-count {
     margin-right: 0.6em;
-  }
-  .cart-split-line {
-    background: rgb(120, 120, 120);
-    height: 1.3em;
-    margin-right: 1em;
-    width: 1px;
   }
 }

@@ -4,6 +4,8 @@ import { CSSTransitionGroup } from 'react-transition-group'
 
 import styles from './styles.scss'
 
+import ExpandingElement from '../../../ExpandingElement/index'
+
 const NavMenuLink = ({
   scene,
   children,
@@ -25,12 +27,11 @@ const NavMenuLink = ({
 )
 
 const Nav = ({
-  visible,
+  active,
   onClick
 }) => {
-  let menu;
-  menu = visible ? (
-    <div class="nav-menu-container" key={"nav-menu"}>
+  const menu = active ? (
+    <div class="nav-menu">
       <NavMenuLink
         scene="/"
         onClick={onClick}
@@ -56,15 +57,11 @@ const Nav = ({
     </div>
   ) : ''
   return (
-    <div>
-      <CSSTransitionGroup
-        transitionName="nav-menu-transition"
-        transitionEnterTimeout={300}
-        transitionLeaveTimeout={300}
-      >
-      {menu}
-      </CSSTransitionGroup>
-    </div>
+    <div class="nav-menu-container">
+      <ExpandingElement>
+        {menu}
+      </ExpandingElement>
+    </div>  
   )
 }
 

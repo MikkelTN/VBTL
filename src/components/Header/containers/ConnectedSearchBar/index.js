@@ -2,13 +2,13 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import * as actionCreators from '../../../../actions/index'
 
-import NavMenu from '../../components/NavMenu/index'
+import SearchBar from '../../components/SearchBar/index'
 
 const mapStateToProps = (
   state
 ) => (
   {
-    active: state.navMenu
+    active: state.searchBar
   }
 )
 
@@ -21,9 +21,9 @@ const mapDispatchToProps = (
   )
 )
 
-const NavVisible = connect(
+const ConnectedSearchBar = connect(
   mapStateToProps,
   mapDispatchToProps
-)(NavMenu)
+)(SearchBar)
 
-export default NavVisible
+export default ConnectedSearchBar

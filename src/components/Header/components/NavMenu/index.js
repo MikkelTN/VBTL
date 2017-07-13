@@ -1,23 +1,30 @@
 import { h, render, Component } from 'preact'
 import styles from './styles.scss'
 
-import ExpandButton from './components/ExpandButton/index'
+import ToggleButton from '../ToggleButton/index'
+import ExpandingElement from '../ExpandingElement/index'
 import Nav from './components/Nav/index'
 
 const NavMenu = ({
-  visible,
-  toggleNav,
+  active,
   closeNav
 }) => {
-  const style = visible ? "nav-menu-active" : "nav-menu"
   return (
-  <div class={style}>
-    <ExpandButton
-      onClick={() => toggleNav()}
-    />
+  <div class="nav-container">
+    <ToggleButton
+      active = {active}
+      toggle = "nav"
+    >
+      <strong class="nav-caption uppercase">Menu</strong>
+      <div class="nav-expand-btn">
+        <div class="nav-expand-bar bar1"></div>
+        <div class="nav-expand-bar bar2"></div>
+        <div class="nav-expand-bar bar3"></div>
+      </div>
+    </ToggleButton>
     <Nav
-      visible = {visible}
-      onClick={() => closeNav()}
+      active = {active}
+      onClick = {() => closeNav()}
     />
   </div>
   )

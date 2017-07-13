@@ -1,0 +1,19 @@
+.search-results {
+  background: rgb(255, 179, 71);
+  border-radius: 2px;
+  max-height: 7vw;
+  overflow-y: auto;
+  position: absolute;
+}
+
+.search-item {
+  border-top: 1px solid rgb(245, 159, 51);
+}
+
+.search-item-link {
+  display: flex;
+  justify-content: space-between;
+  span {
+    padding: 0.4em 0.6em;
+  }
+}
