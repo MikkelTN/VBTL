@@ -44,11 +44,3 @@ export const changeCarousel = (productId, index) => (
     index
   }
 )
-
-//Increment likes
-export const incrementLikes = (productId) => (
-  {
-    type: "INCREMENT_LIKES",
-    productId
-  }
-)

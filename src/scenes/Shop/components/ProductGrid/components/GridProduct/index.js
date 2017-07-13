@@ -12,15 +12,10 @@ const GridProduct = ({
   i
 }) => (
   <div class="grid-product">
-    <Link
-      to={`/shop/${product.code}`}
-      class="grid-product-link"
-    >
-      <Image
-        src={require(`../../../../images/${product.img_grid}`)}
-        alt={product.caption}
-      />
-    </Link>
+    <Image
+      src={require(`../../../../images/${product.img_grid}`)}
+      alt={product.caption}
+    />
     <strong
       class="grid-product-caption uppercase"
     >
@@ -35,19 +30,25 @@ const GridProduct = ({
       class="grid-product-btns"
     >
       <button
-        class="grid-product-add-cart orange uppercase"
+        class="grid-product-add-cart orange"
         onClick={onCartClick}
       >
         <strong>
           Add to cart
         </strong>
       </button>
-      <button
-        class="grid-product-like"
-        onClick={onLikeClick}
+      <Link
+        to={`/shop/${product.code}`}
+        class="grid-product-link"
       >
-        &#10084; {product.likes}
-      </button>
+        <button
+          class="orange"
+        >
+          <strong>
+            Read more
+          </strong>
+        </button>
+      </Link>
     </div>
   </div>
 )
