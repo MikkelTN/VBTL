@@ -13,7 +13,7 @@ const GridProduct = ({
 }) => (
   <div class="grid-product">
     <Link
-      to={`shop/${product.code}`}
+      to={`/shop/${product.code}`}
       class="grid-product-link"
     >
       <Image

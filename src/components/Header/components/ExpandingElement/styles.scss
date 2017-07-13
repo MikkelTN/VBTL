@@ -1,0 +1,17 @@
+.expanding-element-enter {
+  width: 0;
+}
+
+.expanding-element-enter.expanding-element-enter-active {
+  width: 100%;
+  transition: all 300ms ease-in-out;
+}
+
+.expanding-element-leave {
+  width: 100%;
+}
+
+.expanding-element-leave.expanding-element-leave-active {
+  width: 0;
+  transition: all 300ms ease-in-out;
+}

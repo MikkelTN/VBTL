@@ -18,6 +18,12 @@ body {
 	line-height: calc(1.5em + 0.3vw);
 }
 
+input {
+  font-family: $font-stack;
+	font-size: calc(1rem + 0.3vw);
+	line-height: calc(1.5em + 0.3vw);
+}
+
 a:link, a:visited, a:hover, a:active {
   color: inherit;
 	text-decoration: none;

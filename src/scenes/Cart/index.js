@@ -13,23 +13,17 @@ const Cart = ({
   increaseQuantity,
   decreaseQuantity
 }) => {
-  let cartDisplay;
-  if (cart.total > 0) {
-    cartDisplay = (
-      <CartTotal
-        cart={cart}
-        products={products}
-      />
-    )
-  } else {
-    cartDisplay = (
-      <h2
-        class="cart-empty"
-      >
-        The cart is empty!
-      </h2>
-    )
-  }
+  const cartDisplay = cart.total > 0 ? (
+    <CartTotal
+      cart={cart}
+      products={products}
+    />
+  ) :
+    <h2
+      class="cart-empty"
+    >
+      The cart is empty!
+    </h2>
   return (
     <div
       class="section-cart"

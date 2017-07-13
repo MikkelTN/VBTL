@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 
 import styles from './styles.scss'
 
+import SplitLine from '../SplitLine/index'
+
 const Cart = ({
   cart,
   closeNav
@@ -15,7 +17,7 @@ const Cart = ({
       <img src={require('./images/cart.png')} />
     </Link>
     <p class="cart-inventory-count">{cart.total}</p>
-    <div class="cart-split-line"></div>
+    <SplitLine />
   </div>
 )
 

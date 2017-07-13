@@ -1,0 +1,38 @@
+.search-btn {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 1.3rem;
+  justify-content: space-between;
+  margin-right: 0.6em;
+}
+
+.search-btn-img {
+  max-width: 2.3em;
+  position: absolute;
+  transition: all 300ms ease-in-out;
+}
+
+.active {
+  .search-btn {
+    .bar1 {
+      opacity: 1;
+      transform: translateY(0.6rem) rotate(45deg);
+    }
+    .search-btn-img {
+      opacity: 0;
+    }
+    .bar3 {
+      opacity: 1;
+      transform: translateY(-0.6rem) rotate(-45deg);
+    }
+  }
+}
+
+.search-expand-bar {
+  background: black;
+  height: 1px;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+  width: 1.8rem;
+}
