@@ -10,15 +10,6 @@ const products = (state = [], action) => {
         },
         ...state.slice(id + 1)
       ]
-    case 'INCREMENT_LIKES':
-      return [
-        ...state.slice(0, id),
-        {
-          ...state[id],
-          likes: state[id].likes + 1
-        },
-        ...state.slice(id + 1)
-      ]
     default:
       return state
   }

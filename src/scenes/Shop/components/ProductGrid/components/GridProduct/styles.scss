@@ -8,14 +8,12 @@
   margin: 2em;
   max-width: 400px;
   width: 80vw;
-  .grid-product-link {
+  .image {
+    height: 60vw;
     margin-bottom: 1em;
-    .image {
-      height: 60vw;
-      max-height: 300px;
-      max-width: 400px;
-      width: 80vw;
-    }
+    max-height: 300px;
+    max-width: 400px;
+    width: 80vw;
   }
   .grid-product-price {
     margin: 0.5em;

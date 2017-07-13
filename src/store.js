@@ -21,16 +21,7 @@ const rootReducer = combineReducers({
   searchResults
 })
 
-const actionLogger = ({dispatch, getState}) =>
-  (next) => (action) => {
-    console.log(action)
-    return next(action)
-  }
-
-const middleware = applyMiddleware(actionLogger)
-
 const defaultState = {
-  navMenu: false,
   products: productdata,
   cart: {
     total: 0

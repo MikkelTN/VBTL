@@ -15,18 +15,18 @@ const Home = ({
     <div
       class="home-content"
     >
-      <button
-        class="home-to-shop-btn uppercase"
-        onClick={() => closeNav()}
+      <Link
+        to="/shop"
       >
-        <Link
-          to="/shop"
+        <button
+          class="home-to-shop-btn uppercase"
+          onClick={() => closeNav()}
         >
           <h4>
             Enter the store
           </h4>
-        </Link>
-      </button>
+        </button>
+      </Link>
     </div>
   </div>
 )
