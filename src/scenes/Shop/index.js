@@ -3,8 +3,11 @@ import { Route, Switch } from 'react-router-dom'
 
 import styles from './styles.scss'
 
+import AddCartPopup from './components/AddCartPopup/index'
+import ExpandingElement from '../../components/ExpandingElement/index'
 import ProductGrid from './components/ProductGrid/index'
 import SingleProduct from './components/SingleProduct/index'
+
 
 const Shop = ({
   products,
@@ -39,6 +42,7 @@ const Shop = ({
         )}
       />
     </Switch>
+    <AddCartPopup />
   </div>
 )
 

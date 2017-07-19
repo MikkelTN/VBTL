@@ -42,12 +42,12 @@ const CartProduct = ({
           <div
             class="grid-product-quantity-control"
           >
-          <button
+          <div
             class="grid-product-btn"
             onClick={onDecreaseClick}
           >
             -
-          </button>
+          </div>
           <p
             class="grid-product-count"
           >
@@ -55,12 +55,12 @@ const CartProduct = ({
               {cart[product.id]}
             </strong>
           </p>
-          <button
+          <div
             class="grid-product-btn"
             onClick={onIncreaseClick}
           >
             +
-          </button>
+          </div>
         </div>
       </div>
       <div
@@ -71,12 +71,10 @@ const CartProduct = ({
       </div>
     </div>
     <button
-      class="grid-product-add-cart orange uppercase"
+      class="grid-product-add-cart"
       onClick={onRemoveClick}
     >
-      <strong>
-        Remove from cart
-      </strong>
+      Remove from cart
     </button>
     <div
       class="hr-line"

@@ -8,6 +8,7 @@ import {
 import productdata from './data/productdata'
 
 import navMenu from './reducers/navMenu'
+import popup from './reducers/popup'
 import products from './reducers/products'
 import cart from './reducers/cart'
 import searchBar from './reducers/searchBar'
@@ -15,6 +16,7 @@ import searchResults from './components/Header/components/SearchBar/reducers/sea
 
 const rootReducer = combineReducers({
   navMenu,
+  popup,
   products,
   cart,
   searchBar,

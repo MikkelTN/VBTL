@@ -5,9 +5,9 @@ import styles from './styles.scss'
 
 import Image from '../../../../../../components/Image/index'
 
+import AddCartButton from '../../../AddCartButton/index'
+
 const GridProduct = ({
-  onCartClick,
-  onLikeClick,
   product,
   i
 }) => (
@@ -29,24 +29,15 @@ const GridProduct = ({
     <div
       class="grid-product-btns"
     >
-      <button
-        class="grid-product-add-cart orange"
-        onClick={onCartClick}
-      >
-        <strong>
-          Add to cart
-        </strong>
-      </button>
+      <AddCartButton
+        id={product.id}
+      />
       <Link
         to={`/shop/${product.code}`}
         class="grid-product-link"
       >
-        <button
-          class="orange"
-        >
-          <strong>
-            Read more
-          </strong>
+        <button>
+          Read more
         </button>
       </Link>
     </div>

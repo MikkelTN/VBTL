@@ -4,12 +4,12 @@ import styles from './styles.scss'
 
 import Image from '../../../../components/Image/index'
 
+import AddCartButton from '../AddCartButton/index'
+
 const SingleProduct = ({
-  increaseQuantity,
   changeCarousel,
-  incrementLikes,
   products,
-  match
+  match,
 }) => {
   const id = products.findIndex((product) =>
     product.code === match.params.productId
@@ -58,20 +58,9 @@ const SingleProduct = ({
       <div
         class="single-product-btns"
       >
-        <button
-          class="single-product-add-cart orange uppercase"
-          onClick={() => increaseQuantity(product.id)}
-        >
-          <strong>
-            Add to cart
-          </strong>
-        </button>
-        <button
-          class="single-product-like"
-          onClick={() => incrementLikes(product.id)}
-        >
-          &#10084; {product.likes}
-        </button>
+        <AddCartButton
+          id={product.id}
+        />
       </div>
     </div>
   )

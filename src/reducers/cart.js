@@ -11,7 +11,7 @@ const cart = (state = {}, action) => {
       if (state[id] > 1) {
         return {
           ...state,
-          [id]: state[id] - 1 ,
+          [id]: state[id] - 1,
           total: state.total - 1
         }
       } else {

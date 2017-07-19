@@ -12,6 +12,21 @@ export const closeSearch = () => (
   }
 )
 
+//Shop product popup
+export const showPopup = (productId) => (
+  {
+    type: "SHOW_POPUP",
+    productId
+  }
+)
+
+//Hide product popup
+export const hidePopup = () => (
+  {
+    type: "HIDE_POPUP"
+  }
+)
+
 //Remove from cart
 export const removeFromCart = (productId) => (
   {
