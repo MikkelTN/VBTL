@@ -2,7 +2,7 @@ import { h } from 'preact'
 
 import styles from './styles.scss'
 
-import ExpandingElement from '../ExpandingElement/index'
+import ExpandingElement from '../../../ExpandingElement/index'
 import SearchButton from './components/SearchButton/index'
 import SearchCriteria from './components/SearchCriteria/index'
 import SplitLine from '../SplitLine/index'

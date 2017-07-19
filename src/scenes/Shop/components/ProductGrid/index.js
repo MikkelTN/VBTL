@@ -6,9 +6,7 @@ import GridHeader from './components/GridHeader/index'
 import GridProduct from './components/GridProduct/index'
 
 const ProductGrid = ({
-  products,
-  increaseQuantity,
-  incrementLikes
+  products
 }) => (
   <div class="section-product-grid">
     <GridHeader />
@@ -19,8 +17,6 @@ const ProductGrid = ({
           key={i}
           i={i}
           product={product}
-          onCartClick={() => increaseQuantity(product.id)}
-          onLikeClick={() => incrementLikes(product.id)}
         />)}
     </div>
   </div>

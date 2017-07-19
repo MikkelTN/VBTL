@@ -1,10 +1,9 @@
 import { h } from 'preact'
 import { NavLink } from 'react-router-dom'
-import { CSSTransitionGroup } from 'react-transition-group'
 
 import styles from './styles.scss'
 
-import ExpandingElement from '../../../ExpandingElement/index'
+import ExpandingElement from '../../../../../ExpandingElement/index'
 
 const NavMenuLink = ({
   scene,
@@ -55,13 +54,13 @@ const Nav = ({
         Contact
       </NavMenuLink>
     </div>
-  ) : ''
+  ) : null
   return (
     <div class="nav-menu-container">
       <ExpandingElement>
         {menu}
       </ExpandingElement>
-    </div>  
+    </div>
   )
 }
 

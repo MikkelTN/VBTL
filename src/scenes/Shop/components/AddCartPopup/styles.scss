@@ -1,0 +1,16 @@
+.add-cart-popup-container {
+  left: 0;
+  position: fixed;
+  top: 1rem;
+}
+
+.add-cart-popup {
+  background: var(--main-bg);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  p {
+    padding: 1em;
+  }
+}

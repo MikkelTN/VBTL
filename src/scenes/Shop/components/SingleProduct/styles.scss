@@ -16,7 +16,6 @@
     display: flex;
     margin-top: 0.5em;
     .image {
-      cursor: pointer;
       height: 15vh;
       max-height: 150px;
       max-width: 112px;
@@ -41,11 +40,5 @@
     justify-content: space-around;
     margin-bottom: 3em;
     width: 90%;
-    button {
-      border: 1px solid rgb(200, 200, 200);
-      border-radius: 3px;
-      padding: 0.3em;
-      width: 8.3em;
-    }
   }
 }

@@ -2,7 +2,6 @@ import { h, render, Component } from 'preact'
 import styles from './styles.scss'
 
 import ToggleButton from '../ToggleButton/index'
-import ExpandingElement from '../ExpandingElement/index'
 import Nav from './components/Nav/index'
 
 const NavMenu = ({
